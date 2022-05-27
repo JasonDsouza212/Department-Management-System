@@ -34,7 +34,7 @@ module.exports = {
             return res.status(404).json(errors);
         }
         const isCorrect = await bcrypt.compare(password, student.password)
-        if (!isCorrect) {
+        if (isCorrect) {
             errors.password = 'Invalid Credentials';
             return res.status(404).json(errors);
         }

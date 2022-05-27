@@ -34,25 +34,25 @@ module.exports = {
             }
             const avatar = gravatar.url(email, { s: '200', r: 'pg', d: 'mm' })
             let departmentHelper;
-            if (department === "C.S.E") {
+            if (department === "B.C.A") {
                 departmentHelper = "01"
             }
-            else if (department === "E.C.E") {
+            else if (department === "M.C.A") {
                 departmentHelper = "02"
             }
-            else if (department === "I.T") {
-                departmentHelper = "03"
-            }
-            else if (department === "Mechanical") {
-                departmentHelper = "04"
-            }
-            else if (department === "Civil") {
-                departmentHelper = "05"
+            // else if (department === "I.T") {
+            //     departmentHelper = "03"
+            // }
+            // else if (department === "Mechanical") {
+            //     departmentHelper = "04"
+            // }
+            // else if (department === "Civil") {
+            //     departmentHelper = "05"
 
-            }
-            else if (department === "E.E.E") {
-                departmentHelper = "06"
-            }
+            // }
+            // else if (department === "E.E.E") {
+            //     departmentHelper = "06"
+            // }
             else {
                 departmentHelper = "00"
             }
@@ -174,22 +174,28 @@ module.exports = {
             }
             const avatar = gravatar.url(email, { s: '200', r: 'pg', d: 'mm' })
             let departmentHelper;
-            if (department === "C.S.E") {
+            if (department === "B.C.A") {
                 departmentHelper = "01"
             }
-            else if (department === "E.C.E") {
+            else if (department === "M.C.A") {
                 departmentHelper = "02"
             }
-            else if (department === "I.T") {
-                departmentHelper = "03"
-            }
-            else if (department === "Mechanical") {
-                departmentHelper = "04"
-            }
-            else if (department === "Civil") {
-                departmentHelper = "05"
+            // if (department === "C.S.E") {
+            //     departmentHelper = "01"
+            // }
+            // else if (department === "E.C.E") {
+            //     departmentHelper = "02"
+            // }
+            // else if (department === "I.T") {
+            //     departmentHelper = "03"
+            // }
+            // else if (department === "Mechanical") {
+            //     departmentHelper = "04"
+            // }
+            // else if (department === "Civil") {
+            //     departmentHelper = "05"
 
-            }
+            // }
             else {
                 departmentHelper = "06"
             }
@@ -282,20 +288,26 @@ module.exports = {
                 d: 'mm' // Default
             });
             let departmentHelper;
-            if (department === "C.S.E") {
+            // if (department === "C.S.E") {
+            //     departmentHelper = "01"
+            // }
+            // else if (department === "E.C.E") {
+            //     departmentHelper = "02"
+            // }
+            // else if (department === "I.T") {
+            //     departmentHelper = "03"
+            // }
+            // else if (department === "Mechanical") {
+            //     departmentHelper = "04"
+            // }
+            // else if (department === "Civil") {
+            //     departmentHelper = "05"
+            // }
+            if (department === "B.C.A") {
                 departmentHelper = "01"
             }
-            else if (department === "E.C.E") {
+            else if (department === "M.C.A") {
                 departmentHelper = "02"
-            }
-            else if (department === "I.T") {
-                departmentHelper = "03"
-            }
-            else if (department === "Mechanical") {
-                departmentHelper = "04"
-            }
-            else if (department === "Civil") {
-                departmentHelper = "05"
             }
             else {
                 departmentHelper = "06"

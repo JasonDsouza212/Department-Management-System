@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { Link, useHistory } from 'react-router-dom'
 import { useSelector, useDispatch } from 'react-redux'
 import { adminLogout } from '../redux/action/adminAction'
+// import Clghome from 'Clghome'
 
 
 const Home = () => {
@@ -21,7 +22,7 @@ const Home = () => {
     }
     return (
         <div className="container-fluid">
-          
+            {/* <Clghome /> */}
             <nav className="navbar navbar-expand-lg navbar-light bg-light">
                 <h4 className="navbar-brand mt-1" href="">SRM</h4>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
