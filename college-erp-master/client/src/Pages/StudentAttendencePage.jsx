@@ -16,6 +16,21 @@ const Home = () => {
       dispatch(fetchAttendence())  
     },[])
 
+    function stat(v){
+        let val="SHORTAGE";
+        if(v>75){
+            val="ELIGIBLE"
+        }
+        return val;
+    }
+    function col(v){
+        let val="red";
+        if(v>75){
+            val="green"
+        }
+        return val;
+    }
+
     return (
         <div>
             {store.student.isAuthenticated ? <>
@@ -34,6 +49,7 @@ const Home = () => {
                                         <th scope="col">Absent Hours</th>
                                         <th scope="col">Total Hours</th>
                                         <th scope="col">Attendence</th>
+                                        <th scope='col'>Status</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -48,6 +64,7 @@ const Home = () => {
                                                 <td>{res.absentHours}</td>
                                                 <td>{res.totalLecturesByFaculty}</td>
                                                 <td>{res.attendence}%</td>
+                                                <td style={{color:col(res.attendence),fontWeight:"bold"}}>{stat(res.attendence)}</td>
                                             </tr>
                                         )
                                     }

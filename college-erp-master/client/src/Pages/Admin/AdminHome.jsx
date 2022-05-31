@@ -20,7 +20,7 @@ const AdminHome = () => {
                             <div className="row">
                                 <div className="col-md-5">
                                     <div className="card" style={{ width: "18rem" }}>
-                                        <img className="card-img-top" src={store.admin.admin.avatar} alt="Card image cap" />
+                                        {/* <img className="card-img-top" src={store.admin.admin.avatar} alt="Card image cap" /> */}
                                         <div className="card-body">
                                             <h5 className="card-title">{store.admin.admin.name}</h5>
                                             <h5 className="card-title">{store.admin.admin.registrationNumber}</h5>

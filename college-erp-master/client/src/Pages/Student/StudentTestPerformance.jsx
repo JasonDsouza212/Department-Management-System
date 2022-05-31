@@ -13,8 +13,23 @@ const StudentTestPerformance = () => {
         dispatch(getMarks())
     }, [])
 
+    function resu(v){
+        let r="FAIL";
+        if(v>40){
+            r="Pass";
+        }
+        return r;
+    }
 
+    function rescolor(v){
+        let c="red";
+        if(v>40){
+            c="green";
+        }
+        return c;
+    }
 
+ 
     return (
 
         <>
@@ -37,6 +52,7 @@ const StudentTestPerformance = () => {
                                                 <th scope="col">Obtained Marks</th>
                                                 <th scope="col">Total Marks</th>
                                                 <th scope="col">Percentage</th>
+                                                <th scope="col">Result</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -48,7 +64,8 @@ const StudentTestPerformance = () => {
                                                         <td>{res.subject.subjectName}</td>
                                                         <td>{res.marks}</td>
                                                         <td>{res.totalMarks}</td>
-                                                        <td>{(res.marks / res.totalMarks) * 100}%</td>
+                                                        <td>{((res.marks / res.totalMarks) * 100).toFixed(2)}%</td>
+                                                        <td  style={{color:rescolor(((res.marks / res.totalMarks) * 100).toFixed(2)),fontWeight:"bold"}}>{resu(((res.marks / res.totalMarks) * 100).toFixed(2))}</td>
                                                     </tr>
                                                 )
                                             }
@@ -74,6 +91,7 @@ const StudentTestPerformance = () => {
                                                 <th scope="col">Obtained Marks</th>
                                                 <th scope="col">Total Marks</th>
                                                 <th scope="col">Percentage</th>
+                                                <th scope="col">Result</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -85,7 +103,8 @@ const StudentTestPerformance = () => {
                                                         <td>{res.subject.subjectName}</td>
                                                         <td>{res.marks}</td>
                                                         <td>{res.totalMarks}</td>
-                                                        <td>{(res.marks / res.totalMarks) * 100}%</td>
+                                                        <td>{((res.marks / res.totalMarks) * 100).toFixed(2)}%</td>
+                                                        <td  style={{color:rescolor(((res.marks / res.totalMarks) * 100).toFixed(2)),fontWeight:"bold"}}>{resu(((res.marks / res.totalMarks) * 100).toFixed(2))}</td>
                                                     </tr>
                                                 )
                                             }
@@ -109,11 +128,13 @@ const StudentTestPerformance = () => {
                                                 <th scope="col">Obtained Marks</th>
                                                 <th scope="col">Total Marks</th>
                                                 <th scope="col">Percentage</th>
+                                                <th scope="col">Result</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             {
                                                 store.student.allMarks.Semester.map((res, index) =>
+                                                    
                                                     <tr key={index}>
                                                         <th scope="row">{index + 1}</th>
                                                         <td>{res.subject.subjectCode}</td>
@@ -121,6 +142,7 @@ const StudentTestPerformance = () => {
                                                         <td>{res.marks}</td>
                                                         <td>{res.totalMarks}</td>
                                                         <td>{((res.marks / res.totalMarks) * 100).toFixed(2)}%</td>
+                                                        <td  style={{color:rescolor(((res.marks / res.totalMarks) * 100).toFixed(2)),fontWeight:"bold"}}>{resu(((res.marks / res.totalMarks) * 100).toFixed(2))}</td>
                                                     </tr>
                                                 )
                                             }

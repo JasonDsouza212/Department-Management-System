@@ -34,7 +34,7 @@ const StudentSubjectList = () => {
                                             <tr key={index}>
                                                 <th scope="row">{index + 1}</th>
                                                 <td>{res.subjectCode}</td>
-                                                <td>{res.subjectName}</td>
+                                                <td style={{fontWeight:"bold"}}>{res.subjectName}</td>
                                                 <td>{res.year}</td>
                                                 <td>{res.totalLectures}</td>
                                             </tr>

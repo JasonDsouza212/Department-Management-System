@@ -121,6 +121,8 @@ function App() {
           <Route exact path="/forgotPassword/:user" component={ForgotPassword} />
           <Route exact path="/chat/:room" component={Chat} />
           <Route exact path="/student/:registrationNumber" component={RecieverUserDetails} />
+          
+          
         </Switch>
       </Router>
     </div>
