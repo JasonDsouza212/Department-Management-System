@@ -49,6 +49,9 @@ io.on('connection', (socket) => {
 let _response = {}
 
 //ROUTES
+app.get('/home', (req, res) => {
+  res.render('home', { title: 'Home'});
+});
 app.use('/api/admin', adminRoutes)
 app.use('/api/faculty', facultyRoutes)
 app.use('/api/student', studentRoutes)
