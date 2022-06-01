@@ -29,7 +29,7 @@ const Home = () => {
             {/* <Clghome/> */}
                 <div className="col">
                     <nav className="navbar navbar-expand-lg navbar-light  bg-light">
-                        <h4 className="navbar-brand mt-1" href="">JSS</h4>
+                        <h4 className="navbar-brand mt-1" href="">JSSTU</h4>
                         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                             <span className="navbar-toggler-icon"></span>
                         </button>
@@ -41,6 +41,19 @@ const Home = () => {
                                 <li className="nav-item active">
                                     <button type="button" className="btn"><Link to="/home"><li>{name.toUpperCase()}</li></Link></button>
                                 </li>
+                                <li className="nav-item">
+                                    <button type="button" className="btn"><Link to="/student/clgInfo"><li>CLG INFO </li></Link></button>
+                                </li>
+                                <li className="nav-item">
+                                    <button type="button" className="btn"><Link to="/student/questionpapers"><li>QUESTION PAPERS </li></Link></button>
+                                </li>
+                                <li className="nav-item">
+                                    <button type="button" className="btn"><Link to="/student/feespayment"><li>FEES PAYMENT</li></Link></button>
+                                </li>
+                                {/* <li className="nav-item">
+                                    <button type="button" className="btn"><Link to="/studentDetails"><li>NEW CONVERSATION </li></Link></button>
+                                </li> */}
+                                
                               
                                 <li className="nav-item">
                                     <button type="button" className="btn"><Link to="/student/updateProfile"><li>UPDATE PROFILE</li></Link></button>
@@ -55,12 +68,12 @@ const Home = () => {
                                     </div>
                                 </li>
                                 
-                                <li className="nav-item">
+                                {/* <li className="nav-item">
                                     <button type="button" className="btn"><Link to="/studentDetails"><li>STUDENTS</li></Link></button>
-                                </li>
-                                <li className="nav-item">
-                                    <button type="button" className="btn"><Link to="/studentDetails"><li>NEW CONVERSATION ({store.student.newerChats.length})</li></Link></button>
-                                </li>
+                                </li> */}
+                                
+                              
+
                                 <li className="nav-item">
                                     <button type="button" className="btn"><Link to="/student/updatePassword"><li>UPDATE PASSWORD</li></Link></button>
                                 </li>
