@@ -8,26 +8,19 @@ const clgInfo=()=> {
  
   return (
     <div>
-        <HomeHelper />
-        <ul class="slideshow">
-          <li><span></span></li>
-          <li><span>2</span></li>
+      <HomeHelper />  
+          <ul class="slideshow">
           <li><span></span></li>
           <li><span></span></li>
           <li><span></span></li>
-        </ul>
-        {/* <base href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/"></base>
-<div id="slider">
-      <figure>
-      <img src="" alt></img>
-      <img src="https://images.shiksha.com/mediadata/images/1603270293php6EfYUw.jpeg" alt></img>
-      <img src="https://sjce.ac.in/wp-content/uploads/2018/01/13717316_986628254788562_3319145106671402444_o-1000x600.jpg" alt></img>
-      <img src="https://sjce.ac.in/wp-content/uploads/2018/01/DSC_9752-1000x600.jpg" alt></img>
-      <img src="https://images.shiksha.com/mediadata/images/1559273318phpkS54ZX.jpeg" alt></img>
-      </figure>
-      </div> */}
-</div>
- )
-}
+          <li><span></span></li>
+          <li><span></span></li>
+          </ul>
+      <div class='ourDepartment'>
+        <h1 style={{color:"#0492c2"}}>Our Department</h1>
+        <p>Department has been established to design and offer courses MCA and BCA with an objective of producing the best computer professionals to keep swiftness with the R&D activities in this fast emerging field of Computer Applications. Ever since its inception in 1986, the department strives to meet the computing needs of different sectors and offering specially designed courses to their students. The department consistently updates curriculum as per the changing requirements of the industry by considering suggestions from qualified board of studies committee involving efficient members from the field of industry, research and academia. The department has witnessed around 70 percent placements in reputed companies and also seen students opting for promoting start-ups and higher studies. Department is always getting constant encouragement and support for uplifting the quality of education from the management with divine blessings of His Holiness Swamiji.</p>
+      </div>
+    </div>
+)}
 
 export default clgInfo;

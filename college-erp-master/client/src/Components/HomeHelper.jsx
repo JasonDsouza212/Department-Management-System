@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react'
 import { Link, useHistory } from 'react-router-dom'
 import { useSelector, useDispatch } from 'react-redux'
 import { studentLogout, newerChats, previousChats} from '../redux/action/studentAction'
-import Clghome from './Clghome'
+// import Clghome from './Clghome'
 
 const Home = () => {
     const history = useHistory()
@@ -36,7 +36,7 @@ const Home = () => {
                         <div className="collapse navbar-collapse" id="navbarNav">
                             <ul className="navbar-nav">
                                 <li>
-                                    <Clghome />
+                                    {/* <Clghome /> */}
                                 </li>
                                 <li className="nav-item active">
                                     <button type="button" className="btn"><Link to="/home"><li>{name.toUpperCase()}</li></Link></button>
